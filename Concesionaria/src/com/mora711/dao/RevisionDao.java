@@ -55,7 +55,7 @@ public class RevisionDao {
     public void deleteRevision (String codigo){
         try {
             PreparedStatement preparedStatement = connection.prepareStatement(
-                    "DELETE FROM clientes WHERE codigo=?"
+                    "DELETE FROM revisiones WHERE codigo=?"
             );
             preparedStatement.setString(1,codigo);
             preparedStatement.executeUpdate();
